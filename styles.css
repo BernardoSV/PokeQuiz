@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+html {
+  box-sizing: border-box; 
+  background: #f5f5f5;
+  font-family: 'Alfa Slab One', cursive;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; 
+}
+#content {
+  max-width: 1200px;
+  margin: 5px auto;  
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;    
+}
+#logo{
+  margin-top: 20px;
+  width: 450px;
+}
+
+#content h1 {
+  font-weight: bold;
+  font-size: 45px;
+  color: #fccf00;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #2468B1;
+  margin-top: 10px;
+}
+#pokeImgContainer {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; 
+  margin: 0px auto;
+  margin-top: 10px;
+}
+#pokeImgContainer img {
+  width: 105%;
+  -webkit-filter: brightness(0%);
+  -moz-filter: brightness(0%);
+  filter: brightness(0%);
+}
+
+#content input[type=text]{
+  width: 340px;
+  height: 50px;
+  font-size: 30px;
+  padding-top: 10px;  
+  text-align: center;
+  border: none;
+  border-bottom: 5px solid #2468B1;
+  outline: none;
+  margin-top: 30px;
+}
+#content input[type=text]:focus {
+  border-bottom: 5px solid #fccf00
+}
+#pokedex{  
+  max-width: 100%;   
+  margin: 20px auto 20px;
+  display: inline-flex;  
+  flex-wrap: wrap;
+  font-family: 'Lato';
+  justify-content: center;  
+}
+.pokemonCard {
+  height: auto;
+  width: 160px;  
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(100, 100, 100, 0.7);
+  text-align: center;
+  text-transform: capitalize;   
+}
+.pokemonCard:hover, .pokemonCard:active {
+  position: relative; 
+  top: -10px;  
+}
+
+
+
+.pokemonCardImg {
+  height: 130px;
+  width: 130px;
+}
+.pokemonCardImgContainer{
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255,.65);
+  margin: 0 auto;
+  overflow: visible;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.pokemonCard h2{
+  margin-top: 5px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+.pokemonIdNumber {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	font-size: 12px;
+  padding: 5px 10px;
+  width: 50px; 
+  margin: 0 auto;
+}
+.pokemonType{
+  margin-bottom: 10px;
+}  
+
+#start div {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color:#2468B1;
+  line-height: 300px;
+  font-size: 60px;
+  cursor: pointer;
+  color: #fccf00;
+  transition: 0.5s ease;
+}
+
+#start div:hover {
+  color: #2468B1;
+  background-color:#fccf00;
+}
+#score {
+ margin-top: 10px; 
+ font-size: 26px;  
+ 
+}
+
+
+.bug {
+  background-color: #a8b820;
+}
+
+.dragon {
+  background-color: #7038f8;
+}
+
+.electric {
+	background-color: #f8d030;
+}
+
+
+.flying {
+  background-color: #e5ceff;
+}
+.fighting {
+  background-color: #c03028;
+}
+.fire {
+	background-color: #f08030;
+}
+.ghost {
+  background-color: #705898;
+}
+
+.grass {
+	background-color: #78c850;
+}
+.ground {
+  background-color: #e0c068;
+}
+.ice {
+  background-color: #98d8d8; 
+}
+.rock {
+  background-color: #b8a038;
+}
+.fairy {
+  background-color: #ee99ac;
+}
+.poison {
+  background-color: #a040a0;
+}
+.psychic {
+  background-color: #f85888;
+}
+.steel {
+	background-color: #b8b8d0;
+}
+.normal {
+  background-color: #a8a878;
+}
+.water{
+  background-color: #6890f0;
+}
+
+.failed {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.failed img{
+  filter: brightness(0%);
+  transition: 0.5s ease;
+ 
+}
+.failed:hover img, .failed:active img{
+  filter: brightness(100%);
+}
+.failed:hover, .failed:active{
+  filter: grayscale(0%);
+}
+
+#wins{
+  color: green;
+}
+#loss{
+  color: red;
+}
+
+@media screen and (max-width: 420px){
+  .pokemonCard{
+    width: 140px; 
+    height: auto;  
+  }  
+  .pokemonCardImg {
+    height: 100px;
+    width: 100px;   
+  }  
+  .pokemonCardImgContainer{
+    height: 95px;
+    width: 95px;
+   margin-bottom: 15px;
+    margin-top: 10px;    
+  }  
+  .pokemonCard h2{
+    margin-top: 5px;
+    font-weight: 900;
+  } 
+  #logo{
+    width: 300px;
+  }
+  #score {
+    font-size: 22px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
