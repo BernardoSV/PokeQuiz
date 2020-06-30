@@ -1,6 +1,6 @@
 # PokeQuiz - Quem é esse Pokémon?
 
- <img src="https://github.com/BernardoSV/PokeQuiz/blob/master/preview/poke.gif" width="290" />
+ <img src="https://github.com/BernardoSV/PokeQuiz/blob/master/preview/poke.gif" />
  
  ---
  
